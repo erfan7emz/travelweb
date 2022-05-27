@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="aos-by-red.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/f4ebe7e3ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa-solid fa-earth-americas"></i> Explore
+        </button>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2><i class="fa-solid fa-location-dot"></i> Destinations</h2>
+          </div>
+          <div class="rrow">
+            <div class="column">
+              <h3 class="c4">Africa</h3>
+              <a href="#">Egypt</a>
+              <a href="#">Morocco</a>
+              <a href="#">South Asfrica</a>
+            </div>
+            <div class="column">
+              <h3 class="c4">Americas</h3>
+              <a href="#">Canada</a>
+              <a href="#">Cuba</a>
+              <a href="#">Mexico</a>
+              <a href="#">United States</a>
+            </div>
+            <div class="column">
+              <h3 class="c4">Asia</h3>
+              <a href="#">Emirates</a>
+              <a href="#">Iran</a>
+              <a href="#">Oman</a>
+              <a href="#">Turkey</a>
+            </div>
+            <div class="column">
+              <h3 class="c4">Europe</h3>
+              <a href="#">France</a>
+              <a href="#">Ireland</a>
+              <a href="#">Netherland</a>
+              <a href="#">Spain</a>
+              <a href="#">Switzerland</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="about.html"><i class="fa-solid fa-address-card"></i> About Us</a>
+      <a href="index.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <div class="search-bar">
+        <span class="search-icon">
+          <i class="fa fa-fw fa-search"></i>
+        </span>
+        <input type="text" class="search" placeholder="Search.." />
+      </div>
+    </div>
+    <div class="home-pg">
+      <img
+        class="background background-country"
+        src="images/rafael-garcin-cE1ObffUthE-unsplash.jpg"
+        alt="France flag"
+      />
+      <div class="back-text-country">
+        <h1>FRANCE</h1>
+        <div data-aos="zoom-in-up" data-aos-once="true">
+          <h3>
+            “The shopping, the food, the views! Paris is a city that entrances
+            us all, and I am no exception.” Michael Kors
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="intro-country">
+      <div class="intro-note intro-france">
+        <h2>Quick Intro</h2>
+        <p>
+          France, in Western Europe, encompasses medieval cities, alpine
+          villages and Mediterranean beaches. Paris, its capital, is famed for
+          its fashion houses, classical art museums including the Louvre and
+          monuments like the Eiffel Tower. The country is also renowned for its
+          wines and sophisticated cuisine. Lascaux's ancient cave drawings,
+          Lyon's Roman theater and the vast Palace of Versailles attest to its
+          rich history.
+        </p>
+        <a href="https://en.wikipedia.org/wiki/France" target="_blank"
+          >Read more about France</a
+        >
+      </div>
+      <div class="mapouter map-style">
+        <div class="gmap_canvas">
+          <iframe
+            width="400"
+            height="400"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=france&t=&z=5&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><a href="https://2piratebay.org">pirate bay</a><br /><style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 400px;
+              width: 400px;
+            }</style
+          ><a href="https://www.embedgooglemap.net">google map embed</a
+          ><style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 400px;
+              width: 400px;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <div class="row-grid">
+      <div class="column-grid">
+        <img src="images/ilnur-kalimullin-CB0Qrf8ib4I-unsplash.jpg" />
+        <img src="images/antony-bec-nD9tEn63suc-unsplash.jpg" />
+        <img src="images/reuben-mcfeeters-u0Bfur4ZNzU-unsplash.jpg" />
+      </div>
+      <div class="column-grid">
+        <img src="images/bastien-nvs-SprV1eqNrqM-unsplash.jpg" />
+        <img src="images/matthew-deblieux-Q5EIdxuEVaU-unsplash.jpg" />
+      </div>
+      <div class="column-grid">
+        <img src="images/gloria-villa-GjYw5xyMI3w-unsplash.jpg" />
+        <img src="images/paul-gaudriault-xzoD4P7Lu7M-unsplash.jpg" />
+        <img src="images/chris-karidis-PIOqHJG5a1U-unsplash.jpg" />
+        <img src="images/dan-hadar-x5-sTSSoInw-unsplash (1).jpg" />
+      </div>
+    </div>
+    <div class="local_time"></div>
+    <script src="ParisTime.js"></script>
+    <div class="hotel"></div>
+    <script src="hotel.js"></script>
+    <div class="footer">
+      <p><i class="fa-regular fa-copyright"></i> 2022 By Erfan Saraj</p>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

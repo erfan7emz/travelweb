@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="aos-by-red.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/f4ebe7e3ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <i class="fa-solid fa-earth-americas"></i> Explore
+        </button>
+        <div class="dropdown-content">
+          <div class="header">
+            <h2><i class="fa-solid fa-location-dot"></i> Destinations</h2>
+          </div>
+          <div class="rrow">
+            <div class="column">
+              <h3 class="c4">Africa</h3>
+              <a href="#">Egypt</a>
+              <a href="#">Morocco</a>
+              <a href="#">South Asfrica</a>
+            </div>
+            <div class="column">
+              <h3 class="c4">Americas</h3>
+              <a href="#">Canada</a>
+              <a href="#">Cuba</a>
+              <a href="#">Mexico</a>
+              <a href="#">United States</a>
+            </div>
+            <div class="column">
+              <h3 class="c4">Asia</h3>
+              <a href="#">Emirates</a>
+              <a href="#">Iran</a>
+              <a href="#">Oman</a>
+              <a href="#">Turkey</a>
+            </div>
+            <div class="column">
+              <h3 class="c4">Europe</h3>
+              <a href="france.html">France</a>
+              <a href="#">Ireland</a>
+              <a href="#">Netherland</a>
+              <a href="#">Spain</a>
+              <a href="#">Switzerland</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="about.html"><i class="fa-solid fa-address-card"></i> About Us</a>
+      <a href="index.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+      <div class="search-bar">
+        <span class="search-icon">
+          <i class="fa fa-fw fa-search"></i>
+        </span>
+        <input type="text" class="search" placeholder="Search.." />
+      </div>
+    </div>
+    <div class="home-pg">
+      <img
+        class="background"
+        src="images/jailam-rashad-lT9rqfG7lcQ-unsplash.jpg"
+        alt="Island in ocean"
+      />
+      <div class="back-text">
+        <h1 class="animate__animated animate__slideInDown">Explore World</h1>
+        <h3>
+          A platform to compare and choose all you need for a great adventure
+        </h3>
+      </div>
+    </div>
+    <h1 class="head-2 animate__animated animate__pulse">
+      Follow the process to get ready for thr best trip of your life
+    </h1>
+    <div class="process-1">
+      <div
+        class="box-primary box-1 box-content"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <h2>
+          <i class="fa-solid fa-map-location-dot"></i> 1. Search for a
+          destination
+        </h2>
+      </div>
+      <div
+        class="box-primary box-2 box-content"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-once="true"
+        s
+      >
+        <h2>
+          <i class="fa-solid fa-circle-info"></i> 2. Gather all information and
+          check reviews
+        </h2>
+      </div>
+    </div>
+    <div class="process-2">
+      <div
+        class="box-primary box-3 box-content"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <h2>
+          <i class="fa-solid fa-plane-up"></i> 3. Book your filght at lowest
+          rate
+        </h2>
+      </div>
+      <div
+        class="box-primary box-4 box-content"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <h2>
+          <i class="fa-solid fa-bed"></i> 4. Book a proper accomodation to stay
+        </h2>
+      </div>
+    </div>
+    <div class="process-1">
+      <div
+        class="box-primary box-5 box-content"
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <h2>
+          <i class="fa-solid fa-car-side"></i> 5. Look for extras, rent a car,
+          book local guide and many more ...
+        </h2>
+      </div>
+      <div
+        class="box-primary box-6 box-content"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+        data-aos-once="true"
+      >
+        <h2>
+          <i class="fa-solid fa-suitcase-rolling"></i> 6. Now, pack only what
+          you need to and enjoy
+        </h2>
+      </div>
+    </div>
+    <div class="container-sm">
+      <div class="my-2 card">
+        <div class="card-body">
+          <h2 class="card-title">Search Flights</h2>
+          <div class="row">
+            <div class="col-sm">
+              <div class="mb-2">
+                <label id="origin-label" for="origin-input" class="form-label"
+                  >Departure Airport</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    list="origin-options"
+                    id="origin-input"
+                    placeholder="Location"
+                    aria-describedby="origin-label"
+                  />
+                  <datalist id="origin-options"></datalist>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="mb-2">
+                <label
+                  id="destination-label"
+                  for="destination-input"
+                  class="form-label"
+                  >Arrival Airport</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-plane-arrival"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    list="destination-options"
+                    id="destination-input"
+                    placeholder="Location"
+                    aria-describedby="destination-label"
+                  />
+                  <datalist id="destination-options"></datalist>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-2 col">
+          <div class="h-100 card">
+            <div class="card-body">
+              <h5 class="card-title">Dates</h5>
+              <div class="mb-2">
+                <label
+                  id="flight-type-label"
+                  for="flight-type-select"
+                  class="form-label"
+                  >Flight</label
+                >
+                <select
+                  id="flight-type-select"
+                  class="form-select"
+                  aria-describedby="flight-type-label"
+                >
+                  <option value="one-way">One-way</option>
+                  <option value="round-trip">Round-trip</option>
+                </select>
+              </div>
+              <div id="departure-date" class="mb-2">
+                <label
+                  id="departure-date-label"
+                  for="departure-date-input"
+                  class="form-label"
+                  >Departing</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="fa-regular fa-calendar"></i>
+                  </span>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="departure-date-input"
+                    aria-describedby="departure-date-label"
+                  />
+                </div>
+              </div>
+              <div id="return-date" class="mb-2">
+                <label
+                  id="return-date-label"
+                  for="return-date-input"
+                  class="form-label"
+                  >Returning</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="fa-regular fa-calendar-days"></i>
+                  </span>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="return-date-input"
+                    aria-describedby="return-date-label"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2 col">
+          <div class="h-100 card">
+            <div class="card-body">
+              <h5 class="card-title">Details</h5>
+              <div class="mb-2">
+                <label
+                  id="travel-class-label"
+                  for="travel-class-select"
+                  class="form-label"
+                  >Travel class</label
+                >
+                <select
+                  class="form-select"
+                  id="travel-class-select"
+                  aria-describedby="travel-class-label"
+                >
+                  <option value="ECONOMY">Economy</option>
+                  <option value="BUSINESS">Business</option>
+                  <option value="FIRST">First</option>
+                </select>
+              </div>
+              <label class="form-label">Passengers</label>
+              <div class="mb-2">
+                <div class="input-group">
+                  <label for="adults-input" class="input-group-text"
+                    >Adults</label
+                  >
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control"
+                    id="adults-input"
+                    aria-describedby="adults-label"
+                  />
+                </div>
+                <span id="adults-label" class="form-text"
+                  >12 years old and older</span
+                >
+              </div>
+              <div class="mb-2">
+                <div class="input-group">
+                  <label for="children-input" class="input-group-text"
+                    >Children</label
+                  >
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control"
+                    id="children-input"
+                    aria-describedby="children-label"
+                  />
+                </div>
+                <span id="children-label" class="form-text"
+                  >Younger than 12 years old</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="search-button" class="w-100 btn btn-primary">Search</button>
+    </div>
+    <script src="booking.js"></script>
+    <div class="footer">
+      <p><i class="fa-regular fa-copyright"></i> 2022 By Erfan Saraj</p>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

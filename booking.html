@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Search</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f4ebe7e3ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-sm">
+      <div class="my-2 card">
+        <div class="card-body">
+          <h5 class="card-title">Search Flights</h5>
+          <div class="row">
+            <div class="col-sm">
+              <div class="mb-2">
+                <label id="origin-label" for="origin-input" class="form-label"
+                  >Departure Airport</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    list="origin-options"
+                    id="origin-input"
+                    placeholder="Location"
+                    aria-describedby="origin-label"
+                  />
+                  <datalist id="origin-options"></datalist>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="mb-2">
+                <label
+                  id="destination-label"
+                  for="destination-input"
+                  class="form-label"
+                  >Arrival Airport</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="fa-solid fa-plane-arrival"></i>
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    list="destination-options"
+                    id="destination-input"
+                    placeholder="Location"
+                    aria-describedby="destination-label"
+                  />
+                  <datalist id="destination-options"></datalist>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-2 col">
+          <div class="h-100 card">
+            <div class="card-body">
+              <h5 class="card-title">Dates</h5>
+              <div class="mb-2">
+                <label
+                  id="flight-type-label"
+                  for="flight-type-select"
+                  class="form-label"
+                  >Flight</label
+                >
+                <select
+                  id="flight-type-select"
+                  class="form-select"
+                  aria-describedby="flight-type-label"
+                >
+                  <option value="one-way">One-way</option>
+                  <option value="round-trip">Round-trip</option>
+                </select>
+              </div>
+              <div id="departure-date" class="mb-2">
+                <label
+                  id="departure-date-label"
+                  for="departure-date-input"
+                  class="form-label"
+                  >Departing</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="fa-regular fa-calendar"></i>
+                  </span>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="departure-date-input"
+                    aria-describedby="departure-date-label"
+                  />
+                </div>
+              </div>
+              <div id="return-date" class="mb-2">
+                <label
+                  id="return-date-label"
+                  for="return-date-input"
+                  class="form-label"
+                  >Returning</label
+                >
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="fa-regular fa-calendar-days"></i>
+                  </span>
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="return-date-input"
+                    aria-describedby="return-date-label"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-2 col">
+          <div class="h-100 card">
+            <div class="card-body">
+              <h5 class="card-title">Details</h5>
+              <div class="mb-2">
+                <label
+                  id="travel-class-label"
+                  for="travel-class-select"
+                  class="form-label"
+                  >Travel class</label
+                >
+                <select
+                  class="form-select"
+                  id="travel-class-select"
+                  aria-describedby="travel-class-label"
+                >
+                  <option value="ECONOMY">Economy</option>
+                  <option value="BUSINESS">Business</option>
+                  <option value="FIRST">First</option>
+                </select>
+              </div>
+              <label class="form-label">Passengers</label>
+              <div class="mb-2">
+                <div class="input-group">
+                  <label for="adults-input" class="input-group-text"
+                    >Adults</label
+                  >
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control"
+                    id="adults-input"
+                    aria-describedby="adults-label"
+                  />
+                </div>
+                <span id="adults-label" class="form-text"
+                  >12 years old and older</span
+                >
+              </div>
+              <div class="mb-2">
+                <div class="input-group">
+                  <label for="children-input" class="input-group-text"
+                    >Children</label
+                  >
+                  <input
+                    type="number"
+                    min="0"
+                    class="form-control"
+                    id="children-input"
+                    aria-describedby="children-label"
+                  />
+                </div>
+                <span id="children-label" class="form-text"
+                  >Younger than 12 years old</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="search-button" class="w-100 btn btn-primary">Search</button>
+    </div>
+    <script src="booking.js"></script>
+  </body>
+</html>
